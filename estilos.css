@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
 
 * {
    margin: 0;
@@ -42,6 +43,19 @@ li {
     padding-right: 60px;
 }
 
+h1 {
+    font-family: "Covered By Your Grace";
+    font-optical-sizing: auto;
+    font-size: 70px;
+    color:black;
+}
+
+h2 {
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+}
+
 h3 {
     font-family: "Exo", sans-serif;
     font-optical-sizing: auto;
@@ -50,4 +64,16 @@ h3 {
     font-size: 24px;
     color: #ffff;
     letter-spacing: 1.4px;
+}
+
+.textoinfo {
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.textoinfo2 {
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-size: 24px;
 }
