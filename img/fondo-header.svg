@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1920px" height="110px" viewBox="0 0 1920 110" enable-background="new 0 0 1920 110" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-6.277" width="1935.192" height="113"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g clip-path="url(#SVGID_2_)">
+			<rect x="0" y="-909.868" fill="#FFFFFF" width="1919.916" height="1085.874"/>
+			
+				<image overflow="visible" opacity="0.4" enable-background="new    " width="1920" height="1080" xlink:href="../../../Desktop/DRFLI/imagen_fondo.jpg"  transform="matrix(1 0 0 1 -2.439916e-004 -909.8691)">
+			</image>
+			
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-531.5696" y1="717.6641" x2="1637.6484" y2="723.6651" gradientTransform="matrix(1 0 0 -1 539.1001 353.4004)">
+				<stop  offset="0" style="stop-color:#000000"/>
+				<stop  offset="0.9732" style="stop-color:#000000;stop-opacity:0.708"/>
+				<stop  offset="1" style="stop-color:#000000;stop-opacity:0.7"/>
+			</linearGradient>
+			<rect x="0" y="-909.868" fill="url(#SVGID_3_)" width="1919.916" height="1085.874"/>
+		</g>
+	</g>
+</g>
+</svg>
