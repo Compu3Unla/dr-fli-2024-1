@@ -93,15 +93,23 @@ li {
 
 h1 {
     font-family: "Covered By Your Grace";
+    font-style: normal;
     font-optical-sizing: auto;
     font-size: 70px;
     color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center; 
+    font-weight: 400; 
+    letter-spacing: 3.50px; 
+    word-wrap: break-word"
 }
 
 h2 {
     font-family: "Exo", sans-serif;
     font-style: normal;
     font-size: 35px;
+    color: white;
 }
 
 .logo {
@@ -116,10 +124,53 @@ a {
     text-decoration: none;
 }
 
+#nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulonosotros {
+    width: 100%; 
+    height: 250px;
+    justify-content: flex-start; 
+    align-items: center; 
+    display: inline-flex;
+    background-color: white;
+}
+
+.articulo01 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
 .textoinfo {
     font-family: "Exo", sans-serif;
     font-style: normal;
     font-size: 25px;
+    color: white;
+    width: 700px;
+    height: 500px;
+}
+
+#colabora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .textoinfo2 {
