@@ -212,6 +212,9 @@ a {
     height: 955px;
 }
 .categorias {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     padding-top: 160px;
     width: 100%;
     max-width: 1920px;
@@ -323,9 +326,8 @@ a {
 
 footer {
     display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 1920px;
-    padding-left: 8%;
     padding-top: 2%;
     height: 209px;
     flex-shrink: 0;
@@ -340,16 +342,3 @@ footer {
     line-height: 16px;
     gap: 10%;
 } 
-
-
-div img {
-    padding: 5%;
-}
-
-
-
-
-
-
-
-
