@@ -344,18 +344,42 @@ a {
 footer {
     display: flex;
     justify-content: center;
+    align-items: first baseline;
     width: 100%;
-    padding-top: 2%;
     height: 209px;
-    flex-shrink: 0;
+    padding-top: 2%;
     background-color: #0D0D0D;
     background-size: cover;
     color: #FFF;
     font-family: Exo;
-    font-size: 10px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 400;
     letter-spacing: 0.75px;
-    line-height: 16px;
+    line-height: 22px;
     gap: 10%;
 } 
+
+footer img {
+    padding-top: 8%;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+    max-width: 58%;
+}
+
+.local {
+    padding-top: 8%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1700px;
+
+   
+}
+
