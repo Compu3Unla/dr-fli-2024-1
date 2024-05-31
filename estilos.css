@@ -326,19 +326,29 @@ a {
 
 footer {
     display: flex;
-    justify-content: center;
+    padding: 2% 2% 2% 9%;
     width: 100%;
-    padding-top: 2%;
     height: 209px;
-    flex-shrink: 0;
     background-color: #0D0D0D;
     background-size: cover;
     color: #FFF;
     font-family: Exo;
     font-size: 10px;
     font-style: normal;
-    font-weight: 400;
     letter-spacing: 0.75px;
     line-height: 16px;
     gap: 10%;
 } 
+
+footer img {
+    padding-top: 8%;
+}
+
+div a {
+    padding: 4%;
+}
+
+.local {
+    padding-top: 8%;
+}
+
