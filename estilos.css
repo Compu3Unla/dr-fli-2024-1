@@ -160,11 +160,31 @@ a {
     align-items: center;
 }
 
-.articulo01 {
+#sectiondiv {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     height: auto;
+    padding: 72px, 166px, 72px, 180px;
+}
+
+.adiv01 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-right: 180px;
+}
+
+.adiv02 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 72px, 180px, 72px, 164px;
 }
 
 .textoinfo {
