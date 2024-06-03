@@ -484,3 +484,49 @@ footer img {
     filter: hue-rotate(234deg);
     opacity: 92%;
 }
+
+.producto {
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    gap: 2%;
+    font-family: exo;
+    color: #FFF;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    max-width: 658px;
+    gap: 10%;
+    font-size: 34px;  
+}
+
+.informacion .precio {
+    background-color: #E8237D;
+    width: 181px;
+    height: 41px;
+}
+
+.cantidadycompra {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccioncantidad {
+    display: flex;
+}
+
+.botoncomprar {
+    background-color: #3DD12F;
+    width: 623px;
+    height: 54px;
+    justify-content: center;
+    align-items: center;
+    font-family: exo;
+}
