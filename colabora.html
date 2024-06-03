@@ -9,79 +9,95 @@
     </head>
     <body>
         <header>
-            <div class="logo">
-                <img src="img/logo_header.svg" width="114px" height="64px" alt="logo-dr-fli">
+            <div id="cabecera">
+                <img class="logo" src="img/logo_header.svg" width="120px" height="70px" alt="logo-dr-fli">
+                <nav class="navconteiner">
+                    <ul class="botonera">
+                        <li>
+                            <a href="#">Productos</a>
+                            <ul class="desplegable">
+                                <img class="borde-degradado" src="img/borde_degradado.svg" width="254px" height="420px">
+                                <li><a href="ropa.html" target="_self">Ropa</a></li>
+                                <li><a href="accesorios.html" target="_self">Accesorios</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+                        <li><a href="colabora.html" target="_self">Colabora</a></li>
+                    </ul>
+                </nav>
+                <nav class="iconos">
+                    <ul>
+                        <li><a><img src="img/lupa_icono.svg" width="30px" height="24px"></a></li>
+                        <li><a href="usuario.html"><img src="img/usuario_icono.svg" width="23px" height="27px"></a></li>
+                        <li><a><img src="img/carrito_icono.svg" width="28px" height="26px"></a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="botonera">
-                <ul>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-                    <li><a href="colabora.html" target="_self">Colabora</a></li>
-                </ul>
-            </nav>
-            <nav class="iconos">
-                <li><img src="img/lupa_icono.svg" width="30px" height="24px"></li>
-                <li><img src="img/usuario_icono.svg" width="23px" height="27px"></li>
-                <li><img src="img/carrito_icono.svg" width="28px" height="26px"></li>
-            </nav>
         </header>
         <main>
             <seccion id="colabora">
-                <div class="titulo">
                     <section  class="titulonosotros">
                         <section class="imgnoso">
                             <img src="img/corazon-12.svg" alt="corazon-12" width="81px" height="67px">
                             <h1>Colabora</h1>
                         </section>
                     </section>
-                </div>
-                <article id="articulo01">
-                    <h2>Colaboración Solidaria de Alimentos</h2>
-                    <p class="textoinfo2">Colabora via On-line.
+                <div class="sectiondiv">   
+                    <div id="div01">
+                        <h2>Colaboración Solidaria de Alimentos</h2>
+                        <p class="textoinfo">Colabora via On-line.</p>
 
-                        Hola!! Que onda!
-                        Miren la cosa es así, por cada compra que hagas online equivaldría a un kilo de alimentos para las familias necesitadas.
-                        Nosotros personalmente nos encargamos de comprar la comida en pequeños mercados.
+                        <p class="textoinfo"> Hola!! Que onda! <br>
+                            Miren la cosa es así, por cada compra que hagas online equivaldría a un kilo de alimentos para las familias necesitadas.
+                            Nosotros personalmente nos encargamos de comprar la comida en pequeños mercados.</p>
+                            
+                        <p class="textoinfo"> Colabora en la tienda física.</p>
+                            
+                        <p class="textoinfo"> Aca, en Doctor Fli, hemos decidió poner nuestra tienda como punto clave en la colaboración de alimentos; a cambio de su solidaridad les regalamos un 20% de descuento en toda la ropa.
+                            El objetivo de esta campaña es que los demás negocios se animen y pongan su establecimiento como punto de colaboración, Sbes por que?? ¡¡Porque con un poco de ayuda se pueden lograr grandes resultados!! </p>
                         
-                        Colabora en la tienda física.
-                        
-                        Aca, en Doctor Fli, hemos decidió poner nuestra tienda como punto clave en la colaboración de alimentos; a cambio de su solidaridad les regalamos un 20% de descuento en toda la ropa.
-                        El objetivo de esta campaña es que los demás negocios se animen y pongan su establecimiento como punto de colaboración, Sbes por que?? ¡¡Porque con un poco de ayuda se pueden lograr grandes resultados!!
-                        
-                        ¡MUCHAS GRACIAS!</p>
+                        <p class="textoinfo"> ¡MUCHAS GRACIAS!</p>
+                    </div>
+                    <div id="div03">
                         <img src="img/drfli-recojida.jpg" alt="drfli-recojida" width="627px" height="468px">
-                </article>
+                        <video src="img/video-recogida-drfli.mp4" width="627px" height="400px"></video>
+                    </div>
+                </div>     
             </section>
         </main>
         <footer>
-            <div class="sobre-compra">
-                <ul>
-                    <li>¿Cómo comprar?</li>
-                    <li>Aviso legal</li>
-                    <li>Envios y devoluciones</li>
-                </ul>
-                <img src="img/paypal.png" alt="medios de pago">
-            </div>
-            <div class="sobre-contacto">
-                <h4>Contacto</h4>
-                <a href="http://www.facebook.com/DRFLI?ref=hl" target="_blank" rel="noopener noreferrer"><img src="img/_a_ facebook.svg" alt="icono de facebook"></a>
-                <a href="http://www.instagram.com/doctor_fli/" target="_blank" rel="noopener noreferrer"><img src="img/_a_ instagram.svg" alt="icono de instagram"></a>
-                <a href="http://api.whatsapp.com/send/?phone=%2B34600662300&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="img/_a_ whatssap.svg" alt="icono de whatsapp"></a>
-                <h4>Nuestro local</h4>
-                <p>Calle Pontezuelas 38</p>
-            </div>
-            <div class="sobre-integrantes">
-                <h4>Integrantes</h4>
-                <ul>
-                    <li>Gonzalo Avalos Nuñez</li>
-                    <li>Gonzalez Leiva Nadia</li>
-                    <li>Staropoly Melany</li>
-                </ul>
-            </div>
-            <div class="sobre-cursada">
-                <p>Primer Cuatrimestre 2024</p>
-                <p>UNLa Computaci&oacute;n 3</p>
-            </div>
+            <div class="contenedor-footer">
+                <div class="sobre-compra">
+                    <ul>
+                        <li>¿C&oacute;mo comprar?</li>
+                        <li>Aviso legal</li>
+                        <li>Envios y devoluciones</li>
+                    </ul>
+                    <img src="img/paypal.png" alt="medios de pago">
+                </div>
+                <div class="sobre-contacto">
+                    <h4>Contacto</h4>
+                    <div id="redes">
+                        <a href="http://www.facebook.com/DRFLI?ref=hl" target="_blank" rel="noopener noreferrer"><img src="img/_a_ facebook.svg" alt="icono de facebook"></a>
+                        <a href="http://www.instagram.com/doctor_fli/" target="_blank" rel="noopener noreferrer"><img src="img/_a_ instagram.svg" alt="icono de instagram"></a>
+                        <a href="http://api.whatsapp.com/send/?phone=%2B34600662300&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="img/_a_ whatssap.svg" alt="icono de whatsapp"></a>
+                    </div>
+                    <h4>Nuestro local</h4>
+                    <p>Calle Pontezuelas 38</p>
+                </div>
+                <div class="sobre-integrantes">
+                    <h4>Integrantes</h4>
+                    <ul>
+                        <li>Gonzalo Avalos Nuñez</li>
+                        <li>Gonzalez Leiva Nadia</li>
+                        <li>Staropoly Melany</li>
+                    </ul>
+                </div>
+                <div class="sobre-cursada">
+                    <p>Primer Cuatrimestre 2024</p>
+                    <p>UNLa Computaci&oacute;n 3</p>
+                </div>
+            </div>    
         </footer>
     </body>
 </html> 
