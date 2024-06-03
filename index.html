@@ -10,12 +10,13 @@
     <body>
         <header>
             <div id="cabecera">
-                <img class="logo" src="img/logo_header.svg" width="118px" height="68px" alt="logo-dr-fli">
+                <img class="logo" src="img/logo_header.svg" width="120px" height="70px" alt="logo-dr-fli">
                 <nav class="navconteiner">
                     <ul class="botonera">
                         <li>
                             <a href="#">Productos</a>
                             <ul class="desplegable">
+                                <img class="borde-degradado" src="img/borde_degradado.svg" width="254px" height="420px">
                                 <li><a href="ropa.html" target="_self">Ropa</a></li>
                                 <li><a href="accesorios.html" target="_self">Accesorios</a></li>
                             </ul>
@@ -25,9 +26,11 @@
                     </ul>
                 </nav>
                 <nav class="iconos">
-                    <li><img src="img/lupa_icono.svg" width="30px" height="24px"></li>
-                    <li><img src="img/usuario_icono.svg" width="23px" height="27px"></li>
-                    <li><img src="img/carrito_icono.svg" width="28px" height="26px"></li>
+                    <ul>
+                        <li><a><img src="img/lupa_icono.svg" width="30px" height="24px"></a></li>
+                        <li><a href="usuario.html"><img src="img/usuario_icono.svg" width="23px" height="27px"></a></li>
+                        <li><a><img src="img/carrito_icono.svg" width="28px" height="26px"></a></li>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -37,6 +40,7 @@
                     <img src="img/slider_1.jpg" width="100%" height="auto" alt="slider1">
                 </div>
             </div>
+
             <div id="sectionuno">
                 <section class="categorias" >
                     <section class="encabezado">
@@ -44,6 +48,48 @@
                         <h1>catálogo exclusivo</h1>
                     </section>
                 </section>
+                <div class="carrusel-wrap">
+                    <img src="img/flecha_izq.svg" width="69px" height="41px" id="irbtn">
+                    <div class="contenedor-carrusel">
+                        <div>
+                            <span class="remeras-carrusel">
+                                    <img src="img/remeras.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Remeras</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/pilusos.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Pilusos</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/buzos.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Buzos</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/musculosas.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Musculosas</p>
+                            </span>
+                        </div>
+                        <div>
+                            <span class="remeras-carrusel">
+                                    <img src="img/gorras.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Gorras</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/medias.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Medias</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/pantalon.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Pantalones</p>
+                            </span>
+                            <span class="remeras-carrusel">
+                                    <img src="img/pilusos.jpg" width="320px" height="320px" alt="categoria remera">
+                                    <p class="titulo-categoria">Ver Todo</p>
+                            </span>
+                        </div>
+                    </div>
+                    <img src="img/flecha_dere.svg" width="69px" height="41px" id="volverbtn">
+                </div>
             </div>
             <div id="galeria">
                 <section class="encabezado">
@@ -130,36 +176,65 @@
                     <a class="cargar"><p class="letras">Cargar más +</p></a>
                 </section>
             </div>
-        </main>
-        <footer>
-            <div class="sobre-compra">
+    <!--Script del carrusel-->
+    <script>
+
+        let scrollContainer = document.querySelector(".contenedor-carrusel");
+        let irbtn = document.getElementById("irbtn");
+        let volverbtn = document.getElementById("volverbtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        volverbtn.addEventListener("click", ()=> {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        irbtn.addEventListener("click", ()=> {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+
+    </script>
+    <!--Scipt del carrusel-->
+    </main>
+    <footer>
+        <div class="columnas">
+            <section>
                 <ul>
-                    <li>¿Cómo comprar?</li>
+                    <li>¿C&oacute;mo comprar?</li>
                     <li>Aviso legal</li>
                     <li>Envios y devoluciones</li>
                 </ul>
                 <img src="img/paypal.png" alt="medios de pago">
-            </div>
-            <div class="sobre-contacto">
+            </section>
+            <section>
                 <h4>Contacto</h4>
-                <a href="http://www.facebook.com/DRFLI?ref=hl" target="_blank" rel="noopener noreferrer"><img src="img/_a_ facebook.svg" alt="icono de facebook"></a>
-                <a href="http://www.instagram.com/doctor_fli/" target="_blank" rel="noopener noreferrer"><img src="img/_a_ instagram.svg" alt="icono de instagram"></a>
-                <a href="http://api.whatsapp.com/send/?phone=%2B34600662300&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="img/_a_ whatssap.svg" alt="icono de whatsapp"></a>
-                <h4>Nuestro local</h4>
-                <p>Calle Pontezuelas 38</p>
-            </div>
-            <div class="sobre-integrantes">
+                <div class="redes">
+                    <a href="http://www.facebook.com/DRFLI?ref=hl" target="_blank" rel="noopener noreferrer"><img src="img/_a_ facebook.svg" alt="icono de facebook"></a>
+                    <a href="http://api.whatsapp.com/send/?phone=%2B34600662300&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><img src="img/_a_ whatssap.svg" alt="icono de whatsapp"></a>
+                    <a href="http://www.instagram.com/doctor_fli/" target="_blank" rel="noopener noreferrer"><img src="img/_a_ instagram.svg" alt="icono de instagram"></a>
+                </div>
+                    <h4 class="local">Nuestro local</h4>
+                    <p>Calle Pontezuelas 38</p>
+            </section>
+            <section>
                 <h4>Integrantes</h4>
                 <ul>
                     <li>Gonzalo Avalos Nuñez</li>
                     <li>Gonzalez Leiva Nadia</li>
                     <li>Staropoly Melany</li>
                 </ul>
-            </div>
-            <div class="sobre-cursada">
+            </section>
+            <section>
                 <p>Primer Cuatrimestre 2024</p>
                 <p>UNLa Computaci&oacute;n 3</p>
-            </div>
-        </footer>
+            </section>
+        </div>
+    </footer>
     </body>
 </html>
