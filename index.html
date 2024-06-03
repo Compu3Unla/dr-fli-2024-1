@@ -14,12 +14,12 @@
                 <nav class="navconteiner">
                     <ul class="botonera">
                         <li>
-                            <a href="#">Productos</a>
-                            <ul class="desplegable">
-                                <img class="borde-degradado" src="img/borde_degradado.svg" width="254px" height="420px">
-                                <li><a href="ropa.html" target="_self">Ropa</a></li>
-                                <li><a href="accesorios.html" target="_self">Accesorios</a></li>
-                            </ul>
+                            <li><a>Productos</a></li>
+                                <ul class="desplegable">
+                                    <li><a href="ropa.html" target="_self">Ropa</a></li>
+                                    <li><a href="accesorios.html" target="_self">Accesorios</a></li>
+                                    <img class="borde-degradado" src="img/borde_degradado.svg" width="254px" height="420px">
+                                </ul>
                         </li>
                         <li><a href="nosotros.html" target="_self">Nosotros</a></li>
                         <li><a href="colabora.html" target="_self">Colabora</a></li>
@@ -177,29 +177,29 @@
                 </section>
             </div>
     <!--Script del carrusel-->
-    <script>
+        <script>
 
-        let scrollContainer = document.querySelector(".contenedor-carrusel");
-        let irbtn = document.getElementById("irbtn");
-        let volverbtn = document.getElementById("volverbtn");
+            let scrollContainer = document.querySelector(".contenedor-carrusel");
+            let irbtn = document.getElementById("irbtn");
+            let volverbtn = document.getElementById("volverbtn");
 
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-            scrollContainer.style.scrollBehavior = "auto";
-        });
+            scrollContainer.addEventListener("wheel", (evt) => {
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+                scrollContainer.style.scrollBehavior = "auto";
+            });
 
-        volverbtn.addEventListener("click", ()=> {
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 900;
-        });
+            volverbtn.addEventListener("click", ()=> {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft += 900;
+            });
 
-        irbtn.addEventListener("click", ()=> {
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 900;
-        });
+            irbtn.addEventListener("click", ()=> {
+                scrollContainer.style.scrollBehavior = "smooth";
+                scrollContainer.scrollLeft -= 900;
+            });
 
-    </script>
+        </script>
     <!--Scipt del carrusel-->
     </main>
     <footer>
