@@ -350,6 +350,7 @@ a {
     height: 62px;
     background-color: black;
 }
+
 .cargar :hover {
     display: flex;
     justify-content: space-around;
