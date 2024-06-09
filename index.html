@@ -4,22 +4,21 @@
         <meta charset="UTF-8">
         <title>DR.FLI</title>
         <link href="estilos.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="drfli_favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
     <body>
         <header>
             <div id="cabecera">
-                <img class="logo" src="img/logo_header.svg" width="120px" height="70px" alt="logo-dr-fli">
+                <a href="index.html"><img class="logo" src="img/logo_header.svg" width="120px" height="70px" alt="logo-dr-fli"></a>
                 <nav class="navconteiner">
                     <ul class="botonera">
-                        <li>
-                            <li><a>Productos</a></li>
-                                <ul class="desplegable">
-                                    <li><a href="ropa.html" target="_self">Ropa</a></li>
-                                    <li><a href="accesorios.html" target="_self">Accesorios</a></li>
-                                    <img class="borde-degradado" src="img/borde_degradado.svg" width="254px" height="420px">
-                                </ul>
+                        <li><a href="#galeria" tar>Productos</a> 
+                            <ul class="menu-vertical">
+                                <li><a href="ropa.html">Ropa</a></li>
+                                <li><a href="accesorios.html">Accesorios</a></li>
+                            </ul>
                         </li>
                         <li><a href="nosotros.html" target="_self">Nosotros</a></li>
                         <li><a href="colabora.html" target="_self">Colabora</a></li>
@@ -35,12 +34,52 @@
             </div>
         </header>
         <main>
-            <div class="contenedor">
+            <section class="contenedor">
                 <div class="slider">
-                    <img src="img/slider_1.jpg" width="100%" height="auto" alt="slider1">
-                </div>
-            </div>
+                    <div class="slide">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
 
+                        <div class="st first">
+                            <img src="img/slider_1.jpg" alt"">
+                        </div>
+
+                        <div class="st">
+                            <img src="img/slider_2.jpg" alt"">
+                        </div>
+
+                        <div class="st">
+                            <img src="img/slider_3.jpg" alt"">
+                        </div>
+
+                        <div class="nav-auto">
+                            <div class="a-b1"></div>
+                            <div class="a-b2"></div>
+                            <div class="a-b3"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-m">
+                        <label for="radio1" class="m-btn"></label>
+                        <label for="radio2" class="m-btn"></label>
+                        <label for="radio3" class="m-btn"></label>
+                    </div>
+
+                </div>
+            </section>
+    <!--Script Slider-->
+        <script type="text/javascript">
+                    var counter=1;
+                    setInterval(function(){
+                        document.getElementById('radio' + counter).checked=true;
+                        counter++;
+                        if(counter > 3){
+                            counter = 1;
+                        }
+                    },5000);
+        </script>
+    <!--Script Slider-->
             <div id="sectionuno">
                 <section class="categorias" >
                     <section class="encabezado">
@@ -53,38 +92,54 @@
                     <div class="contenedor-carrusel">
                         <div>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/remeras.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Remeras</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/pilusos.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Pilusos</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/buzos.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Buzos</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/musculosas.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Musculosas</p>
+                                </a>
                             </span>
                         </div>
                         <div>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/gorras.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Gorras</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/medias.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Medias</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/pantalon.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Pantalones</p>
+                                </a>
                             </span>
                             <span class="remeras-carrusel">
+                                <a href="ropa.html" target="_self">
                                     <img src="img/pilusos.jpg" width="320px" height="320px" alt="categoria remera">
                                     <p class="titulo-categoria">Ver Todo</p>
+                                </a>
                             </span>
                         </div>
                     </div>
@@ -100,83 +155,158 @@
                         <li class="articulo">
                             <img src="img/remera1.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera Estampada BLSXD</p>
-                            <a><p class="precio">$10.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$10.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/musculosa.jpg" width="300px" height="320px">
                             <p class="proinicio">Musculosa RAP TO</p>
-                            <a><p class="precio">$8.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$8.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera8.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera GRAFFITI</p>
-                            <p class="precio">$10.000</p>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$10.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/buzo_trueno.jpg" width="300px" height="320px">
                             <p class="proinicio">Buzo DR.FLI X TRUENO</p>
-                            <a><p class="precio">$30.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$30.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/gorra.jpg" width="300px" height="320px">
                             <p class="proinicio">Gorra Blanca RIP CURL</p>
-                            <a><p class="precio">$10.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$12.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/buzo_bob.jpg" width="300px" height="320px">
                             <p class="proinicio">Buzo Blanco MIND SPONGE</p>
-                            <a><p class="precio">$20.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$20.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera2.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera Estampada BART</p>
-                            <a><p class="precio">$10.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$10.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera 3.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera Estampada MAZE</p>
-                            <a><p class="precio">$12.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$12.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera6.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera EAT MY SHORTS</p>
-                            <a><p class="precio">$10.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$10.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera9.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera DR.FLI X L. KILLAH</p>
-                            <a><p class="precio">$15.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$15.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/buzo-tupac.jpg" width="300px" height="320px">
                             <p class="proinicio">Buzo TUPAC</p>
-                            <a><p class="precio">$20.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$20.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/piluso.jpg" width="300px" height="320px">
                             <p class="proinicio">Piluso Negro RIP CURL</p>
-                            <a><p class="precio">$15.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$15.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/remera5.jpg" width="300px" height="320px">
                             <p class="proinicio">Remera Estamp. QUINQUI</p>
-                            <a><p class="precio">$12.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$12.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/medias01.jpg" width="300px" height="320px">
                             <p class="proinicio">Medias BIZARRAP</p>
-                            <a><p class="precio">$5.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$5.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                         <li class="articulo">
                             <img src="img/musculosa2.jpg" width="300px" height="320px">
                             <p class="proinicio">Musculosa DANCE</p>
-                            <a><p class="precio">$8.000</p></a>
+                            <a href="producto.html">
+                                <div>
+                                <p class="precio">$8.000</p>
+                                <img src="img/boton_comprar.svg" width="181px" height="41px">
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <a class="cargar"><p class="letras">Cargar más +</p></a>
                 </section>
             </div>
-    <!--Script del carrusel-->
+    <!--Script del Carrusel-->
         <script>
 
             let scrollContainer = document.querySelector(".contenedor-carrusel");
@@ -200,7 +330,7 @@
             });
 
         </script>
-    <!--Scipt del carrusel-->
+    <!--Scipt del Carrusel-->
     </main>
     <footer>
         <div class="columnas">

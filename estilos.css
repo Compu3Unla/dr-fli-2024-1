@@ -37,12 +37,20 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: 46px;
+    list-style: none;
 }
 
 .botonera li {
     padding-right: 10%;
 }
 
+.botonera > li > a {
+    display: block;
+}
+
+.botoner > li:hover {
+    color: #3DD12F;
+}
 .navconteiner {
     display: flex;
     justify-content: space-between;
@@ -60,18 +68,6 @@ header {
     font-size: 28px;
     color: #ffff;
     letter-spacing: 1.4px;
-}
-.contenedor {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-}
-
-.slider {
-    width: auto;
-    max-width: 1920px;
-    height: auto;
 }
 
 .botonera a:hover {
@@ -238,21 +234,34 @@ a {
     position: absolute;
     display: none;
     width: 154px;
+    height: 280px;
+}
+
+.desplegable :hover {
+    display: block;
+    position: absolute;
+    width: 154px;
     height: 240px;
 }
+
 .desplegable li {
-    display: flex;
+    display: none;
     align-items: center;
     margin: 6px;
     width: 222px;
     height: 52px;
     background: linear-gradient(90deg,#000000e4 10%,#33ba26f1,#ff1c8288);
-    background-color: rgba(172, 171, 171, 0.237);
+    background-color: #acabab3c;
 }
 
-.botonera li:hover .desplegable {
+.botonera li:hover .menu-vertical {
     display: block;
 }
+
+.botonera li:hover {
+    color: #3DD12F;
+}
+
 #cabecera {
     display: flex;
     justify-content: space-between;
@@ -322,6 +331,9 @@ a {
 }
 
 .precio {
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,6 +347,11 @@ a {
     background-color: #E8237D;
     width: 181px;
     height: 41px;
+}
+
+.precio:hover {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .articulo {
@@ -452,6 +469,7 @@ footer img {
     overflow: scroll;
 }
 
+
 .contenedor-carrusel div {
     width: 100%;
     display: grid;
@@ -495,17 +513,16 @@ footer img {
     line-height: normal;
     letter-spacing: 1.6px;
     padding-top: 1%;
+    color: black;
 }
 
-.borde-degradado {
-    position: absolute;
-    display: flex;
-    bottom: 0.25%;
-    left: 5px;
+.titulo-categoria:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .iconos ul li a :hover{
-    filter: hue-rotate(234deg);
+    filter: hue-rotate(240deg);
     opacity: 92%;
 }
 
@@ -553,4 +570,129 @@ footer img {
     justify-content: center;
     align-items: center;
     font-family: exo;
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 154px;
+    height: 280px;
+}
+
+.menu-vertical li {
+    align-items: center;
+    margin: 6px;
+    width: 222px;
+    height: 54px;
+    background: linear-gradient(90deg,#000000e4 10%,#33ba26f1,#ff1c8288);
+    background-color: #acabab3c;
+}
+
+
+.contenedor {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 500%;
+    height: 930px;
+    display: flex;
+}
+
+.slide input {
+    display: none;
+}
+
+.st {
+    width: 20%;
+    transition: 2s;
+}
+
+.st img {
+    width: 1920px;
+    height: 930px;
+}
+
+.nav-m {
+    position: absolute;
+    width: 1920px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+}
+
+.m-btn {
+    border: 4px solid #3DD12F;
+    padding: 3px;
+    border-radius: 10px;
+    width: 60px;
+    height: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.m-btn:not(:last-child){
+    margin-right: 30px;
+}
+
+.m-btn:hover {
+    background-color: #3DD12F;
+}
+
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+.nav-auto {
+    position: absolute;
+    width: 1920px;
+    margin-top: 870px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-auto div {
+    border: 4px solid #ff1e83;
+    padding: 3px;
+    border-radius: 10px;
+    width: 60px;
+    height: 0;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child) {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: #ff1e83;
+}
+
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: #ff1e83;
+}
+
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: #ff1e83;
 }
