@@ -560,6 +560,22 @@ footer img {
     color: #FFF;
 }
 
+.meme {
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    gap: 2%;
+    font-family: exo;
+    color: #FFF;
+}
+
 .informacion {
     display: flex;
     flex-direction: column;
