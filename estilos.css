@@ -590,22 +590,67 @@ footer img {
     height: 41px;
 }
 
+.partetalles {
+    display: flex;
+    gap: 4%;
+}
+
+.botonelegirtalle {
+    background-color: #FFF;
+    width: 350px;
+    height: 30px;
+    font-family: lato;
+    font-weight: 400;
+    color: #0D0D0D;
+    text-align: center;
+    border-radius: 0px 0px 20px 0px;
+    border-color: #FFF;
+}
+
 .cantidadycompra {
     display: flex;
-    flex-direction: column;
+    gap: 4%;
 }
 
 .seccioncantidad {
     display: flex;
+    gap: 4%;
+}
+
+.botondemenos, .botondemas {
+    background-color: #E8237D;
+    border-color: #E8237D;
+    width: 30px;
+    height: 30px;
+    border-radius: 13px;
+    font-family: lato;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+
+.campocantidad {
+    background-color: #0D0D0D;
+    border-radius: 13px;
+    width: 60px;
+    height: 30px;
+    color: #FFF;
 }
 
 .botoncomprar {
     background-color: #3DD12F;
-    width: 623px;
+    width: 500px;
     height: 54px;
+    border-radius: 0px 0px 20px 0px;
     justify-content: center;
     align-items: center;
-    font-family: exo;
+    color: #000;
+    text-align: center;
+    font-family: Exo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .menu-vertical {
