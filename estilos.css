@@ -777,3 +777,48 @@ footer img {
 #radio3:checked ~ .nav-auto .a-b3{
     background: linear-gradient(90deg,#E8237D,#3DD12F);
 }
+
+
+.compra {
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    gap: 2%;
+    font-family: exo;
+    color: #FFF;
+}
+
+.Compratitulo {
+    font-family: "Exo Bold", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.textogracias {
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+    width: 800px;
+    letter-spacing: 1.30px;
+    font-weight: 200; 
+    text-align: center;
+}
+
+.flechavolver {
+    margin-top: 50px;
+    margin-left: 900px;
+}
+
