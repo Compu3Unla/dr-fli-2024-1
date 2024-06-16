@@ -9,6 +9,9 @@ body {
     width: auto;
     margin: auto;
 }
+
+/*--- Header ---*/
+
 header {
     width: 100%;
     height: 105px;
@@ -19,17 +22,27 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+}
+
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
 }
 
 .iconos {
     display: flex;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 27px;
     justify-content: space-around;
-    align-items: flex-end;
-    padding-top: 20px;
+    align-items: center;
+    padding-top: 1.10%;
     padding-right: 30px;
+    overflow: hidden;
 }
 
 .botonera {
@@ -92,6 +105,21 @@ li {
     padding-right: 60px;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 118px;
+    height: 68px;
+    padding-top: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--- Header FIN ---*/
+
 h1 {
     font-family: "Covered By Your Grace";
     font-style: normal;
@@ -114,17 +142,6 @@ h2 {
     padding-bottom: 20px;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    width: 118px;
-    height: 68px;
-    padding-top: 14px;
-}
-
-a {
-    text-decoration: none;
-}
 
 #nosotros{
     display: flex;
@@ -282,13 +299,6 @@ a {
     color: #3DD12F;
 }
 
-#cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-}
 #section-uno {
     display: flex;
     flex-direction: column;
@@ -996,3 +1006,46 @@ input {
 
 
 /*---Usuario FIN---*/
+
+
+@media screen and (max-width: 600px) {
+    .navconteiner {
+        display: none;
+    }
+
+    #cabecera {
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+    .iconos {
+        display: flex;
+        width: 100%;
+        max-width: 200px;
+        height: 27px;
+        justify-content: flex-end;
+        align-items: end;
+        padding-top: 1.10%;
+        padding-left: 5%;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 118px;
+        height: 68px;
+        padding-top: 14px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        padding-right: 40px;
+    }
+}
