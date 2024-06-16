@@ -34,16 +34,36 @@
             </div>
         </header>
         <main>
-            <section class="usuario">
-                <img src="img/img_cuenta.svg" width="280px" height="272px">
-                <div class="cuestionario-sesion">
-                    <h4 class="cuenta-label-1">¿Ya tienes una cuenta?</h4>
-                    <button class="boton-iniciar">Iniciar sesión</button>
-                    <h4 class="cuenta-label-1">Crear una cuenta</h4>
-                    <a href="registrarse.html" target="_self"><button class="boton-registrarse">Registrarse</button></a>
-                </div>
-                <div class="flechavolver">
-                    <a href="index.html"><img src="img/flechavolver-06.svg" width="83px" height="54px"></a>
+            <section class="registrarse">
+                <img src="img/img_cuenta_mini.svg" width="151px" height="147px">
+                <h4 class="cuenta-titulo">Crear cuenta</h4>
+                <div class="formulario-registro">
+                    <form method="post" action="registro-finalizado.html" enctype="text/plain" class="formulario">
+                        <label for="nombre"> Nombre y Apellido:</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="60" value="Homero Simpsons" required="">
+    
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" maxlength="50" value="Calle Falsa 1234" required="">
+                        <div class="columnas">
+                            <div class="columna-formulario-1">
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="tel" name="telefono" id="telefono" value="0114567980009">
+
+                                    <label for="contrasena">Contraseña</label>
+                                    <input type="password" name="contrasena" id="contrasena" value="0114567980009">
+                            </div>
+                            <div class="columna-formulario-2">
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email" id="email" maxlength="50" value="simpsonshomero1999@gmail.com" required="">
+                                    
+                                    <label for="contrasena">Confirmar Contraseña</label>
+                                    <input type="password" name="contrasena" id="contrasena" value="0114567980009">
+                            </div>
+                        </div>
+                        <div class="bonton-registro">
+                            <input type="submit" value="Registrarse" formenctype="text/plain" class="boton-registrarse-fin">
+                        </div>
+                    </form>
                 </div>
             </section>
         </main>
