@@ -351,9 +351,6 @@ a {
 }
 
 .precio {
-    opacity: 1;
-    visibility: visible;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,9 +366,13 @@ a {
     height: 41px;
 }
 
-.precio:hover {
+.comprar-img {
+    position: absolute;
     opacity: 0;
-    visibility: hidden;
+}
+
+.comprar-img:hover {
+    opacity: 1;
 }
 
 .articulo {
@@ -401,6 +402,7 @@ a {
 }
 
 .cargar :hover {
+    cursor: pointer;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -778,6 +780,7 @@ footer img {
     background: linear-gradient(90deg,#E8237D,#3DD12F);
 }
 
+/*---Compra ---*/
 
 .compra {
     background-image: url(img/imagen-fondo.png);
@@ -795,30 +798,201 @@ footer img {
     color: #FFF;
 }
 
-.Compratitulo {
-    font-family: "Exo Bold", sans-serif;
-    font-style: normal;
-    font-size: 35px;
-    font-weight: 400;
-    color: white;
-    padding-bottom: 20px;
-    margin-top: 50px;
+.compratitulo {
+    margin-top: 2%;
+    color: #FFF;
     text-align: center;
+    font-family: Exo;
+    font-size: 34px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1.7px;
 }
 
 .textogracias {
-    font-family: "Exo", sans-serif;
+    color: #FFF;
+    font-family: Exo;
+    font-size: 26px;
     font-style: normal;
-    font-size: 25px;
-    color: white;
-    width: 800px;
-    letter-spacing: 1.30px;
-    font-weight: 200; 
-    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1.3px;
 }
 
 .flechavolver {
-    margin-top: 50px;
-    margin-left: 900px;
+    position: sticky;
+    top: 80%;
+    left: 76%;
+}
+/*---Compra FIN---*/
+
+
+/*---Usuario---*/
+
+.usuario {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.cuestionario-sesion {
+    width: 100%;
+    max-width: 410px;
+}
+
+.cuenta-label-1 {
+    padding-top: 6%;
+    padding-bottom: 2%;
+    color: #FFF;
+    text-align: center;
+    font-family: Exo;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+.boton-iniciar, .boton-registrarse {
+    border: 6px solid #3DD12F;
+    border-top-right-radius: 22px;
+    width: 100%;
+    height: 73px;
+    color: #FFF;
+    text-align: center;
+    font-family: Exo;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    background-color: transparent;
+}
+
+.boton-registrarse:hover {
+    background: linear-gradient(90deg, #000 0%, rgba(61, 209, 47, 0.60) 100%);
+    cursor: pointer;
+}
+
+.boton-iniciar:hover {
+    background: linear-gradient(90deg, #000 0%, rgba(61, 209, 47, 0.60) 100%);
+}
+
+.registrarse {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/imagen-fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cuenta-titulo {
+    padding-top: 1%;
+    color: #FFF;
+    text-align: center;
+    font-family: Exo;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.1px;
+}
+
+.formulario-registro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    font-family: Exo;
+    font-size: 22px;
+    color: #FFF;
+    letter-spacing: 1.1px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 22px;
+}
+
+input {
+    width: 100%;
+    max-width: 900px;
+    border: 6px solid #3DD12F;
+    border-top-right-radius: 22px;
+    padding-left: 2%;
+    height: 70px;
+    color: #FFF;
+    font-family: Exo;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    background-color: transparent;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.columna-formulario-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 2.5%;
+
+}
+.columna-formulario-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2.5%;
+}
+
+.boton-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-registrarse-fin {
+    width: 400px;
+    margin-top: 10%;
+    margin-left: 65%;
+
+}
+.boton-registrarse-fin:hover {
+    background: linear-gradient(90deg, #000 0%, rgba(61, 209, 47, 0.60) 100%);
+}
+
+
+/*---Usuario FIN---*/
