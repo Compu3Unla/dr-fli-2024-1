@@ -9,6 +9,9 @@ body {
     width: auto;
     margin: auto;
 }
+
+/*--- Header ---*/
+
 header {
     width: 100%;
     height: 105px;
@@ -19,17 +22,27 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
+}
+
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
 }
 
 .iconos {
     display: flex;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 27px;
     justify-content: space-around;
-    align-items: flex-end;
-    padding-top: 20px;
+    align-items: center;
+    padding-top: 1.10%;
     padding-right: 30px;
+    overflow: hidden;
 }
 
 .botonera {
@@ -92,6 +105,52 @@ li {
     padding-right: 60px;
 }
 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 118px;
+    height: 68px;
+    padding-top: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.desplegable {
+    position: absolute;
+    display: none;
+    width: 154px;
+    height: 280px;
+}
+
+.desplegable :hover {
+    display: block;
+    position: absolute;
+    width: 154px;
+    height: 240px;
+}
+
+.desplegable li {
+    display: none;
+    align-items: center;
+    margin: 6px;
+    width: 222px;
+    height: 52px;
+    background: linear-gradient(90deg,#000000e4 10%,#33ba26f1,#ff1c8288);
+    background-color: #acabab3c;
+}
+
+.botonera li:hover .menu-vertical {
+    display: block;
+}
+
+.botonera li:hover {
+    color: #3DD12F;
+}
+
+/*--- Header FIN ---*/
+
 h1 {
     font-family: "Covered By Your Grace";
     font-style: normal;
@@ -114,17 +173,6 @@ h2 {
     padding-bottom: 20px;
 }
 
-.logo {
-    display: flex;
-    justify-content: flex-start;
-    width: 118px;
-    height: 68px;
-    padding-top: 14px;
-}
-
-a {
-    text-decoration: none;
-}
 
 #nosotros{
     display: flex;
@@ -250,45 +298,6 @@ a {
     color: white;
 }
 
-.desplegable {
-    position: absolute;
-    display: none;
-    width: 154px;
-    height: 280px;
-}
-
-.desplegable :hover {
-    display: block;
-    position: absolute;
-    width: 154px;
-    height: 240px;
-}
-
-.desplegable li {
-    display: none;
-    align-items: center;
-    margin: 6px;
-    width: 222px;
-    height: 52px;
-    background: linear-gradient(90deg,#000000e4 10%,#33ba26f1,#ff1c8288);
-    background-color: #acabab3c;
-}
-
-.botonera li:hover .menu-vertical {
-    display: block;
-}
-
-.botonera li:hover {
-    color: #3DD12F;
-}
-
-#cabecera {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1600px;
-}
 #section-uno {
     display: flex;
     flex-direction: column;
@@ -505,7 +514,8 @@ footer {
 } 
 
 .sobre-compra, .sobre-contacto, .sobre-integrantes, .sobre-cursada {
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
 }
 
 footer img {
@@ -1055,3 +1065,190 @@ input {
 }
 
 /*---Usuario FIN---*/
+
+.botonera-inferior {
+    height: 200px;
+    width: 100%;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .navconteiner {
+        display: none;
+    }
+
+    #cabecera {
+        padding: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+    .iconos {
+        display: flex;
+        width: 100%;
+        max-width: 200px;
+        height: 27px;
+        justify-content: flex-end;
+        align-items: end;
+        padding-top: 1.10%;
+        padding-left: 5%;
+    }
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        width: 118px;
+        height: 68px;
+        padding-top: 14px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        padding-right: 40px;
+    }
+    .botonera-inferior {
+        background-color: #000;
+        display: none;
+        height: 150px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        padding-top: 10%;
+        background-color: #0D0D0D;
+        background-size: cover;
+        color: #FFF;
+        font-family: Exo;
+        font-size: 15px;
+        font-style: normal;
+        letter-spacing: 0.75px;
+        line-height: 22px;
+    } 
+    .contenedor-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+    }
+    .sobre-compra, .sobre-contacto, .sobre-integrantes, .sobre-cursada {
+        width: 100%;
+        max-width: 500px;
+        padding-top: 10%;
+    }
+
+    .contenedor-footer ul li {
+        padding-top: 1.5%;
+    }
+
+    #redes {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4%;
+        padding-bottom: 3%;
+        max-width: 30%;
+    }
+
+    .contenedor-carrusel {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: scroll;
+        padding-left: 5%;
+    }
+    
+    
+    .contenedor-carrusel div {
+        width: 1500px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 18px;
+        flex: none;
+    }
+
+    .contenedor-carrusel::-webkit-scrollbar {
+        display: none;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .carrusel-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 2% 6% 2%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .remeras-carrusel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 200px;
+        margin-right: 1%;
+    }
+
+    .titulo-categoria {
+        text-align: center;
+        font-family: "Covered By Your Grace";
+        font-size: 2em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.6px;
+        padding-top: 1%;
+        padding-left: 34%;
+        color: black;
+    }
+
+    #irbtn, #volverbtn {
+        display: none;
+    }
+
+    h1 {
+        font-family: "Covered By Your Grace";
+        font-style: normal;
+        font-optical-sizing: auto;
+        font-size: 40px;
+        color: black;
+        text-align: center; 
+        font-weight: 400; 
+        letter-spacing: 2px;
+    }
+
+    .vineta {
+        width: 50px;
+        height: auto;
+    }
+
+    .encabezado {
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2%;
+    }
+
+}
