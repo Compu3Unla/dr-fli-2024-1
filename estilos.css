@@ -663,7 +663,7 @@ footer img {
 .tallecantidadycompra {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 35px;
 }
 
 .info3producto {
@@ -765,6 +765,58 @@ a {
     border: none;
     width: 50px;
     height: 40px;
+    text-align: center;
+}
+
+.contenedornotificacion {
+    position: absolute;
+    z-index: 1;
+    margin-left: 200px;
+}
+
+.notificacionenproducto {
+    font-family: exo;
+    color: #FFF;
+    background-color: #E8237D;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+}
+
+.infopopupcarrito {
+    background-color: #3DD12F;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    font-family: exo;
+    color: #000;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+}
+
+.contenedorpopup {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+}
+
+.precioenpopup {
+    font-weight: bold;
+}
+
+.carritoefecto {
+    display: block;
+}
+
+.carritoefecto:hover .contenedorpopup {
+    display: block;
 }
 
 .menu-vertical {
