@@ -342,7 +342,7 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     display: block;
-    margin-left: 9.5%;
+    margin-left: 8%;
 }
 
 .botonfiltro {
@@ -1638,12 +1638,13 @@ input {
     }
 
     .divfiltro {
+        max-width: 550px;
         width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: center;
         display: block;
-        margin-left: 26%;
+        padding-left: 31%;
     }
 
     .img-ropa {
