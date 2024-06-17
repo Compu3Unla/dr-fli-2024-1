@@ -642,7 +642,7 @@ footer img {
 .informacionenproducto {
     display: flex;
     flex-direction: column;
-    gap: 40%;
+    gap: 36%;
 }
 
 .informacionenproducto p {
@@ -650,11 +650,10 @@ footer img {
     font-weight: normal;
 }
 
-.informacionenproducto h2 {
+.info1producto h2 {
     font-size: 35px;
-    padding-bottom: 4px;
+    padding-bottom: 10px;
     font-weight: bold;
-    
 }
 
 .informacionenproducto h3 {
@@ -735,6 +734,37 @@ a {
 .info5producto:hover {
     background-color: #E8237D;
     color: #FFF;
+}
+
+.cantidadybotones {
+    display: flex;
+    gap: 6%;
+    align-items: center;
+}
+
+.botonescantidad {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.botonresta, .botonsuma {
+    background-color: #E8237D;
+    width: 30px;
+    height: 30px;
+    border-radius: 13px;
+    border: none;
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+} 
+
+.botonescantidad input {
+    background-color: #0D0D0D;
+    border-radius: 13px;
+    border: none;
+    width: 50px;
+    height: 40px;
 }
 
 .menu-vertical {
