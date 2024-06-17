@@ -1802,7 +1802,22 @@ input {
         justify-content: flex-start;
         align-items: center;
         display: block;
-        padding-left: 31%;
+    }
+
+    .botonfiltro {
+        background-color: #0D0D0D;
+        border: none;
+        padding: 10px;
+        color: #FFF;
+        font-family: "Covered By Your Grace";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.7px;
+        text-align: start;
+        display: block;
+        margin-left: 17%;
     }
 
     .img-ropa {
@@ -1824,6 +1839,7 @@ input {
         max-width: 250px;
         padding-top: 30px;
     }
+    
 
     /*-- Galerias Acce y Ropa Fin--- */
 
