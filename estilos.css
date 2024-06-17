@@ -1112,12 +1112,11 @@ input {
         justify-content: space-between;
         list-style: none;
         padding: 0;
-        margin-right: 2%;
     }
 
     li {
         list-style: none;
-        padding-right: 36px;
+        padding-right: 32px;
     }
 
     .botonera-inferior {
@@ -1220,6 +1219,7 @@ input {
         justify-content: center;
         align-items: center;
         width: 100%;
+        max-width: 550px;
         margin: 2% 0% 2% 2%;
         height: auto;
         padding-bottom: 50px;
