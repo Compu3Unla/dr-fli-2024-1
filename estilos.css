@@ -1133,7 +1133,7 @@ input {
     }
 
     .iconos-mobile {
-        max-width: 400px;
+        max-width: 300px;
         width: 100%;
         height: auto;
         justify-content: space-between;
@@ -1187,21 +1187,23 @@ input {
     }
 
     .contenedor-carrusel {
-        width: 100%;
+        width: 2800px;
         display: flex;
         justify-content: space-between;
         overflow: scroll;
         padding-left: 6%;
-        padding-top: 5%;
     }
     
-    
     .contenedor-carrusel div {
-        width: 1500px;
+        width: 1300px;
+        height: 600px;
         display: grid;
+        justify-content: space-between;
+        align-items: center;
         grid-template-columns: auto auto auto auto;
-        grid-gap: 18px;
+        grid-gap: 30px;
         flex: none;
+        margin-right: 30%;
     }
 
     .contenedor-carrusel::-webkit-scrollbar {
@@ -1214,7 +1216,8 @@ input {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2% 2% 6% 2%;
+        width: 100%;
+        margin: 2% 0% 2% 2%;
         height: auto;
         padding-bottom: 50px;
     }
@@ -1225,7 +1228,8 @@ input {
         justify-content: center;
         width: 100%;
         max-width: 200px;
-        margin-right: 1%;
+        height: 600px;
+        padding-right: 10%;
     }
 
     .titulo-categoria {
@@ -1237,8 +1241,8 @@ input {
         line-height: normal;
         letter-spacing: 1.6px;
         padding-top: 1%;
-        padding-left: 34%;
         color: black;
+        margin-left: 48%;
     }
 
     #irbtn, #volverbtn {
